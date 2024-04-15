@@ -21,6 +21,7 @@ label {
   display: block;
   margin-bottom: 20px;
   font-size: 1.25rem; /* Larger font size for readability */
+  color: #333; /* Dark gray color for better readability */
 }
 
 input[type="text"],
@@ -29,6 +30,7 @@ input[type="password"] {
   padding: 10px;
   font-size: 1rem; /* Readable font size */
   margin-top: 5px;
+  border: 1px solid #ccc; /* Subtle border for inputs */
 }
 
 button {
