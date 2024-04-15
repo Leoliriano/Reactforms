@@ -1,0 +1,74 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif; /* Ensures a more consistent look across devices */
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4; /* Light grey background */
+}
+
+/* App container styles for padding and max-width */
+.app {
+  margin: 20px;
+  padding: 20px;
+  background: white; /* White background for the app sections */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds subtle shadow for depth */
+  max-width: 800px; /* Max width for the container */
+  margin: 20px auto; /* Centering the app container */
+}
+
+/* Labels and inputs for accessibility and spacing */
+label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1.25rem; /* Larger font size for readability */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%; /* Full width to accommodate different screen sizes */
+  padding: 10px;
+  font-size: 1rem; /* Readable font size */
+  margin-top: 5px;
+}
+
+button {
+  width: 100%; /* Makes the button easily clickable */
+  padding: 15px;
+  background-color: #007BFF; /* Bootstrap primary color for familiarity */
+  color: white;
+  font-size: 1.25rem; /* Larger font size for better readability */
+  border: none;
+  border-radius: 5px; /* Rounded corners for aesthetics */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover for interactive feedback */
+}
+
+/* Error and success message styling */
+.error {
+  color: red;
+  font-size: 1rem; /* Ensures error text is clearly visible */
+}
+
+.success {
+  color: green;
+  font-size: 1rem; /* Ensures success message is clearly visible */
+}
+
+/* Responsive adjustments with a media query */
+@media (max-width: 600px) {
+  .app {
+    margin: 10px; /* Smaller margin for smaller screens */
+  }
+
+  label {
+    font-size: 1rem; /* Smaller font size on smaller screens for better fit */
+  }
+
+  button {
+    font-size: 1rem; /* Adjusting button text size for smaller screens */
+  }
+}
